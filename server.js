@@ -22,6 +22,21 @@ var articleOne = {
     
 };
 
+var articleTwo = {
+    title: 'Article-Two | Sanjib Kumar Mallick',
+    heading: 'Article Two',
+    date: 'Set 6,2017',
+    content:`
+     <p>
+                    This is the content for my first article.This is the content for my first article. This is the content for my first article.
+                </p>
+                <p>
+                   This is the content for my first article.This is the content for my first article. This is the content for my first article. 
+                </p>
+        `
+    
+};
+
 function createTemplate(data){
 var title =data.title;
 var heading =data.heading;
@@ -68,7 +83,7 @@ app.get('/article-one',function(req,res){
 });
 
 app.get('/article-Two',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+  res.send(createTemplate(articleTwo));
 });
 
 app.get('/article-Three',function(req,res){
