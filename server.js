@@ -37,6 +37,19 @@ var articleTwo = {
     
 };
 
+var articleThree = {
+    title: 'Article-Three | Sanjib Kumar Mallick',
+    heading: 'Article Three',
+    date: 'Set 7,2017',
+    content:`
+     <p>
+                    This is the content for my first article.This is the content for my first article. This is the content for my first article.
+                </p>
+                
+        `
+    
+};
+
 function createTemplate(data){
 var title =data.title;
 var heading =data.heading;
