@@ -100,7 +100,7 @@ app.get('/article-Two',function(req,res){
 });
 
 app.get('/article-Three',function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+   res.send(createTemplate(articleThree));
 });
 
 app.get('/ui/style.css', function (req, res) {
