@@ -18,7 +18,7 @@ var articleOne = {
                 </p>
                 <p>
                    This is the content for my first article.This is the content for my first article. This is the content for my first article. 
-     </p>
+     </p>`
     
 };
 
@@ -27,7 +27,7 @@ var title =data.title;
 var heading =data.heading;
 var content = data.content;
 
-    var htmlTemplate ='
+    var htmlTemplate =`
     <html>
         <head>
             <title>
@@ -55,7 +55,7 @@ var content = data.content;
                 </div>
         </div>
         
-    </html>';
+    </html>`;
     return htmlTemplate;
 }
 app.get('/', function (req, res) {
